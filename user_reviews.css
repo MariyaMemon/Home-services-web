@@ -1,0 +1,43 @@
+/* CSS for Reviews Section */
+.reviews {
+    text-align: center; /* Center-align the content */
+    margin-top: 50px; /* Adjust the top margin as needed */
+}
+
+.reviews h1 {
+    color: white; /* Set the color of the heading */
+}
+
+.reviews ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.reviews li {
+    background-color: rgba(0, 0, 0, 0.2); /* Background color for each review */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Add some space between reviews */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+}
+
+.user-profile img {
+    width: 100px; /* Adjust the width of the profile picture */
+    height: 100px; /* Adjust the height of the profile picture */
+    border-radius: 50%; /* Make the profile picture circular */
+    margin-bottom: 10px; /* Add some space below the profile picture */
+}
+
+.star {
+    color: #ffc107; /* Set the color of the stars */
+    font-size: 20px; /* Adjust the size of the stars */
+    margin-right: 5px; /* Add some space between stars */
+    
+}
+

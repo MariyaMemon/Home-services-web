@@ -1,0 +1,113 @@
+
+  body {
+    background-color: #e8e6e6;
+  }
+  
+ .box h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  align-items: center;
+  font-size: 30px; 
+  background-image: linear-gradient(to right, #000000, #ffc300); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+ }
+.box p{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  align-items: center;
+  font-size: 24px; 
+  background-image: linear-gradient(to right, #000000, #ffc300); /* Define your gradient colors */
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    padding: 70px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.box:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.content {
+    text-align: justify;
+    margin: 0 20px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.circle-box {
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+}
+
+.circle {
+  width: 300px; 
+  height: 300px;
+  background-color: #e6aa06;
+  color: #000000; 
+  border-radius: 50%; 
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.circle-content {
+  font-size: 18px; 
+  margin: 50px;
+  padding: auto;
+}
+
+#why-choose-us {
+
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  .box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content {
+    margin: 20px 0;
+  }
+
+   .box p{
+    font-size: 19px;
+   }
+  .image {
+      max-height: 100vh;
+      width: 100vw;
+  }
+}
+

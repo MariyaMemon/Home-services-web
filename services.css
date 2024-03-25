@@ -1,0 +1,153 @@
+.my-header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+#citySelect{
+  color:#7d7d7d;
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#serviceList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#serviceList > li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 36px;
+    color: black; /* Change heading color */
+    margin: 20px 0; /* Add margin to the top and bottom */
+    
+}
+
+
+ .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.card {
+  width: 41%;
+  border: 3px solid lightsalmon;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 10px 10px;
+  transition: transform 0.3s ease; /* Add a transition property */
+
+}
+.card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.card h3 {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  /* opacity: 1; Heading initially invisible */
+  /* transform: translateY(20px); Heading initially shifted down */
+  /* transition: opacity 1s ease, transform 1s ease; */
+}
+/* .card:hover h3 {
+  opacity: 1; /* Heading becomes visible on hover */
+  /* transform: translateY(0); Heading moves up on hover */
+/* } */ */
+
+
+.card p {
+  font-size: 14px;
+}
+
+.card strong {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+
+}
+/* Add the CSS for the popup here */
+   
+
+.popup-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 3px solid lightsalmon;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.popup-card .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.popup-card strong {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 10px);
+  }
+
+  .card-container {
+      justify-content: center;
+  }
+}
+
+
+
+
+  
+

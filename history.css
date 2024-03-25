@@ -1,0 +1,74 @@
+/* Add this CSS in your stylesheet or in a <style> tag in the head section of your HTML */
+
+/* Style for the history section */
+#history {
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+#history h1 {
+    color: white;
+}
+
+/* Style for the history list */
+#history ul {
+    list-style: none;
+    padding: 0;
+}
+
+#history li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.provider-profile {
+    display: flex;
+    align-items: center;
+}
+
+.provider-profile img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.history-details {
+    color: white;
+}
+
+/* Style for the "Send Request Again" button */
+.send-request-again-btn {
+    background-color: #4285f4; /* Blue color, change as needed */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.send-request-again-btn:hover{
+    background-color: #336ac4; 
+}
+
+/* Style for the "Clear History" button */
+.clear-history-btn {
+    background-color: #db4437; /* Red color, change as needed */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.clear-history-btn:hover{
+    background-color: #c82333;
+}

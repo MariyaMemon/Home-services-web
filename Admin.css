@@ -1,0 +1,470 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, rgb(65, 65, 60) 25%, white);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upload-label {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 1;
+}
+.upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sidebar .logo {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-style: italic;
+  animation: rotateLogo 6s linear infinite;
+  background-color: none;
+}
+.sidebar .logo:hover {
+  background-color: none;
+}
+@keyframes rotateLogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    color: white;
+    transform: rotateY(360deg);
+  }
+}
+.sidebar #btn {
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  line-height: 20px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  background-color: rgb(248, 171, 4);
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+  transition: width 0.5s;
+}
+.sidebar.active {
+  width: 250px;
+}
+.sidebar a {
+  color: #000000;
+  text-decoration: none;
+  justify-content: center;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.sidebar a i {
+  font-size: 20px;
+  display: inline;
+  margin-left: 8px;
+  line-height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.sidebar a i:hover {
+  background-color: #fff;
+  border: 7px;
+  border-radius: 30px;
+  margin-left: 9px;
+  padding: 5px 6px;
+  transition: all 0.3s ease;
+}
+.sidebar a span {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin: 20px;
+  display: none;
+  line-height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.sidebar a span:hover {
+  background-color: #fff;
+  border: 5px;
+  border-radius: 50px;
+  margin-left: 8px;
+  padding: 5px 6px;
+  transition: all 0.3s ease;
+}
+.sidebar.active a i {
+  display: none;
+}
+.sidebar.active a span {
+  display: inline;
+}
+.sidebar a:hover {
+  border: 6px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  justify-content: center;
+}
+.content {
+  margin-left: 40px;
+  padding: 40px 0 40px 40px !important;
+  transition: margin-left 0.5s;
+}
+.content.active {
+  margin-left: 280px;
+}
+.account {
+  padding-top: 5px;
+  height: 100vh;
+  margin: 0 0;
+}
+.account .container {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.content h1 {
+  text-transform: uppercase;
+  display: inline;
+}
+
+/* Existing styles... */
+
+.dashboard {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+  overflow-y: auto;
+}
+
+.card-header {
+  padding: 15px 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red {
+  background-color: #ff5733; /* Red color */
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.view-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.users_list {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+.users .container {
+  margin-top: 0 !important;
+  padding-top: 20px;
+}
+
+.users-list {
+  /* background-color: #333;  */
+  color: #333; /* White text color */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.list-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.list-content {
+  text-align: left;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+.list-item span {
+  display: block;
+  margin-bottom: 5px;
+}
+.users-list {
+  /* background-color:  whitesmoke; */
+  color: #333;
+  /* padding: 15px; */
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.list-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #fff;
+  color: #333;
+}
+
+.provider {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+
+.container {
+  margin: 0 20px 20px 20px !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #fff;
+  color: #333;
+}
+
+.providers-list {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+.requests {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+.complete_request {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+.pending_request {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+.account {
+  padding-top: 5px;
+  height: 100vh;
+  display: block;
+}
+@media (max-width: 768px) {
+  /* Adjust styles for small screens */
+  .content .container {
+    display: flexbox;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(1deg, rgb(65, 65, 60) 50%, white);
+  }
+  .sidebar {
+    width: 20px;
+  }
+  .sidebar a i {
+    margin-left: 2px;
+  }
+  .sidebar a i:hover {
+    border: 2px;
+    border-radius: -5px;
+    padding: 2px 2px;
+    /* margin-left: 2px; */
+    margin-right: 2px;
+  }
+  .sidebar a span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .sidebar a span:hover {
+    border: 5px;
+    padding: 2px 2px;
+  }
+
+  .sidebar.active {
+    width: 200px;
+  }
+  .content {
+    margin-left: 14px;
+    padding: 50px;
+    transition: margin-left 0.5s;
+  }
+  .content.active {
+    margin-left: 250px;
+    padding: 15px;
+  }
+}
+.account .container{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.content h1{
+  text-transform: uppercase;
+  display: inline;
+}
+.account form {
+  margin-top: 20px;
+  margin: 5px 5px;
+  padding: 0;
+}
+.account label {
+  display: block;
+  margin-top: 10px;
+}
+.account  input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.account  input[type="submit"] {
+  background-color: rgb(248, 171, 4);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+.account  input[type="submit"]:hover {
+  background-color: rgb(199, 142, 17);
+}
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

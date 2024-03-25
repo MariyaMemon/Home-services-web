@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.profile-picture {
+    position: relative;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Optional: creates a circular shape */
+}
+
+.options-dropdown {
+    margin-left: 10px; /* Adjust as needed to create space between picture and button */
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.options-dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Remove the default focus outline */
+}
+
+.options-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.options-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+.options-content label{
+    color: black;
+    padding: 5px 10px;
+}
+.options-content label:hover{
+    background-color: rgb(223, 217, 217);
+}
+
+.options-content a:hover{
+    background-color:  rgb(223, 217, 217);
+}
+
+.upload-input label:hover{
+    background-color:  rgb(223, 217, 217);
+}
+.options-dropdown:hover .options-content {
+    display: block;
+}
+
